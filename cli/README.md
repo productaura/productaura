@@ -1,6 +1,6 @@
 # productaura
 
-Turn one product photo into a complete set of listing images for Amazon, Etsy, Shopify and social ads, from your
+Turn one product photo into a complete set of listing images for Amazon, Etsy, Shopify, TikTok Shop and social ads, from your
 terminal or an AI assistant. 1 credit = one 2K image.
 
 ```bash

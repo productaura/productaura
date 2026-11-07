@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "co.productaura/productaura",
   "title": "Product Aura",
-  "description": "Turn one product photo into listing and ad images for Amazon, Etsy, Shopify and social ads.",
-  "version": "0.1.1",
+  "description": "Listing and ad images for Amazon, Etsy, Shopify, TikTok Shop and social ads, from one product photo.",
+  "version": "0.1.2",
   "websiteUrl": "https://productaura.co/mcp",
   "icons": [
     {

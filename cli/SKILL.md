@@ -6,8 +6,8 @@ compatibility: Needs internet access and either the Product Aura MCP server (htt
 
 # Product Aura: listing images from one product photo
 
-Product Aura turns one product photo into a complete set of listing and ad images for Amazon, Etsy, Shopify and
-social ads. Images take about 1–3 minutes per set.
+Product Aura turns one product photo into a complete set of listing and ad images for Amazon, Etsy, Shopify, TikTok
+Shop and social ads. Images take about 1–3 minutes per set.
 
 ## Credits (read before spending anything)
 

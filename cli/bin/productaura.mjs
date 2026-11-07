@@ -14,7 +14,7 @@ const BASE = (process.env.PRODUCTAURA_URL || 'https://productaura.co').replace(/
 const CONFIG = path.join(process.env.XDG_CONFIG_HOME || path.join(homedir(), '.config'), 'productaura', 'config.json');
 const MIME = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp' };
 
-const HELP = `productaura ${VERSION}: listing images for Amazon, Etsy, Shopify and social ads from one product photo.
+const HELP = `productaura ${VERSION}: listing images for Amazon, Etsy, Shopify, TikTok Shop and social ads from one product photo.
 
 Usage
   productaura login [--key pa_…]            Save an API key (create one at ${BASE}/app/settings?tab=api)
