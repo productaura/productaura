@@ -1,0 +1,98 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "co.productaura/productaura",
+  "title": "Product Aura",
+  "description": "Turn one product photo into listing and ad images for Amazon, Etsy, Shopify and social ads.",
+  "version": "0.1.1",
+  "websiteUrl": "https://productaura.co/mcp",
+  "icons": [
+    {
+      "src": "https://productaura.co/brand/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://productaura.co/brand/icon-192.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "192x192"
+      ]
+    },
+    {
+      "src": "https://productaura.co/brand/mark.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ],
+      "theme": "light"
+    },
+    {
+      "src": "https://productaura.co/brand/mark-white.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ],
+      "theme": "dark"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://productaura.co/api/mcp/account"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://productaura.co/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. A Product Aura API key (Settings → API keys). Without it only list_packs works.",
+          "value": "Bearer {api_key}",
+          "isRequired": false,
+          "isSecret": true,
+          "variables": {
+            "api_key": {
+              "description": "API key starting with pa_",
+              "placeholder": "pa_…",
+              "isRequired": true,
+              "isSecret": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "productaura",
+      "version": "0.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "mcp"
+        }
+      ],
+      "environmentVariables": [
+        {
+          "name": "PRODUCTAURA_API_KEY",
+          "description": "Product Aura API key (Settings → API keys). Needed for every tool except list_packs.",
+          "placeholder": "pa_…",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/productaura/productaura",
+    "source": "github"
+  }
+}

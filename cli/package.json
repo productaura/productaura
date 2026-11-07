@@ -1,0 +1,15 @@
+{
+  "name": "productaura",
+  "version": "0.1.1",
+  "description": "Product Aura turns one product photo into a complete set of listing and ad images for Amazon, Etsy, Shopify, TikTok Shop and social ads. CLI and MCP server.",
+  "mcpName": "co.productaura/productaura",
+  "keywords": ["product photos", "listing images", "amazon", "etsy", "shopify", "ai images", "mcp", "modelcontextprotocol", "cli"],
+  "homepage": "https://productaura.co/api",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/productaura/productaura.git", "directory": "cli" },
+  "bugs": { "url": "https://github.com/productaura/productaura/issues" },
+  "type": "module",
+  "bin": { "productaura": "bin/productaura.mjs" },
+  "files": ["bin", "README.md", "SKILL.md"],
+  "engines": { "node": ">=20" }
+}
